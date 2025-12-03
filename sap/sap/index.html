@@ -4,39 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>你的姓名</title>
+    <title>作品集 · 婺畔</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>作品集名称</h1>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">婺畔 · 作品集</h1>
+            <p class="site-sub">摄影 / 建模 / 实验性影像</p>
+        </div>
     </header>
+
     <main>
-        <section id="photo-gallery">
-            <figure>
-                <img src="src/photo1.png" alt="描述图片1">
+        <section id="photo-gallery" class="container gallery">
+            <figure data-index="0">
+                <img src="img/photo1.png" alt="flowers">
                 <figcaption>flowers</figcaption>
             </figure>
-            <figure>
-                <img src="src/photo2.png" alt="描述图片2">
+            <figure data-index="1">
+                <img src="img/photo2.png" alt="automation">
                 <figcaption>automation</figcaption>
             </figure>
-            <figure>
-                <img src="src/photo3.png" alt="描述图片3">
+            <figure data-index="2">
+                <img src="img/photo3.png" alt="mountain">
                 <figcaption>mountain</figcaption>
             </figure>
-            <figure>
-                <img src="src/photo4.png" alt="描述图片4">
+            <figure data-index="3">
+                <img src="img/photo4.png" alt="bag">
                 <figcaption>bag</figcaption>
             </figure>
-            <figure>
-                <img src="src/photo5.png" alt="描述图片5">
+            <figure data-index="4">
+                <img src="img/photo5.png" alt="bee">
                 <figcaption>bee</figcaption>
             </figure>
-        
+            <figure data-index="5">
+                <img src="img/photo6.png" alt="extra">
+                <figcaption>extra</figcaption>
+            </figure>
         </section>
     </main>
+    <!-- Lightbox markup inserted by JS for accessibility -->
     <script src="js/script.js"></script>
 </body>
 
