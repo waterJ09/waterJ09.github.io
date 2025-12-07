@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>湍流作品集</title>
+        <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <h1>湍流作品集</h1>
+            <p class="tag">基于个人作品的交互式展示</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <svg class="hero-bg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <filter id="turbulence-filter">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.01 0.02" numOctaves="2" seed="2" />
+                    <feColorMatrix type="saturate" values="0.8" />
+                </filter>
+                <rect class="turb-rect" width="100%" height="100%" filter="url(#turbulence-filter)" />
+            </svg>
+            <div class="hero-content wrap">
+                <h2>流动 · 噪声 · 作品</h2>
+                <p>通过 SVG 湍流滤镜与微妙的交互，呈现你的作品合集。</p>
+                <a class="cta" href="#gallery">浏览作品</a>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery wrap">
+            <h3>作品集</h3>
+            <div class="grid">
+                    <a class="card" data-src="个人作品/index.html" href="#">
+                        <div class="card-media" aria-hidden="true"></div>
+                        <div class="card-body">
+                            <strong>个人作品总览</strong>
+                            <span>包含网站、AI、Figma、Rino 等子项目（点击预览）</span>
+                        </div>
+                    </a>
+                    <a class="card" data-src="个人作品/个人网站/index.html" href="#">个人网站</a>
+                    <a class="card" data-src="个人作品/ai/index.html" href="#">AI 项目</a>
+                    <a class="card" data-src="个人作品/figma/index.html" href="#">Figma</a>
+                    <a class="card" data-src="个人作品/rino/index.html" href="#">Rino</a>
+            </div>
+
+            <!-- 内嵌预览区域（默认隐藏） -->
+            <div id="preview" class="preview" aria-hidden="true">
+                <div class="preview-inner">
+                    <button id="closePreview" class="preview-close" aria-label="关闭预览">✕</button>
+                    <iframe id="previewIframe" title="作品预览" src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <small>© 2025 你的名字 — 湍流作品集</small>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

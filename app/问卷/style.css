@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+}
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    margin-bottom: 30px;
+}
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eaeaea;
+}
+h1 {
+    color: #4a6cf7;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+.intro {
+    color: #666;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.question-group {
+    margin-bottom: 35px;
+}
+.question {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #eee;
+}
+.question:last-child {
+    border-bottom: none;
+}
+.question-title {
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 17px;
+    color: #333;
+    display: flex;
+    align-items: flex-start;
+}
+.question-number {
+    display: inline-block;
+    background-color: #4a6cf7;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 10px;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+.required {
+    color: #ff4757;
+    margin-left: 5px;
+}
+.options {
+    margin-left: 34px;
+}
+.option {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+input[type="text"], input[type="email"], textarea, select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border 0.3s;
+    margin-top: 5px;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
+    border-color: #4a6cf7;
+    outline: none;
+}
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+.rating {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin-top: 10px;
+}
+.rating-option {
+    text-align: center;
+    flex: 1;
+    padding: 8px 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+.rating-option:hover {
+    background-color: #f0f4ff;
+}
+.rating-option input {
+    display: none;
+}
+.rating-label {
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+}
+.rating-option input:checked + .rating-label {
+    color: #4a6cf7;
+    font-weight: 600;
+}
+.scale {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    max-width: 600px;
+}
+.scale-point {
+    text-align: center;
+    width: 60px;
+}
+.scale-point input {
+    display: none;
+}
+.scale-point label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    line-height: 30px;
+    margin: 0 auto 8px auto;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.scale-point label:hover {
+    background-color: #e1e7ff;
+}
+.scale-point input:checked + label {
+    background-color: #4a6cf7;
+    color: white;
+}
+.button-group {
+    text-align: center;
+    margin-top: 40px;
+}
+button {
+    background-color: #4a6cf7;
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(74, 108, 247, 0.25);
+}
+button:hover {
+    background-color: #3a5ce5;
+    transform: translateY(-2px);
+}
+button:active {
+    transform: translateY(0);
+}
+.progress {
+    margin-bottom: 25px;
+}
+.progress-bar {
+    height: 6px;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.progress-fill {
+    height: 100%;
+    background-color: #4a6cf7;
+    width: 0;
+    transition: width 0.5s ease;
+}
+.progress-text {
+    text-align: right;
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 25px 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .rating, .scale {
+        flex-wrap: wrap;
+    }
+    .rating-option, .scale-point {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>婺畔的个人网页</title>
+    <!-- Google Fonts: Cormorant Garamond (标题), Space Grotesk (正文), Patrick Hand (手写) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Space+Grotesk:wght@300;400;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+    <!-- 固定导航 -->
+    <nav class="site-nav" role="navigation" aria-label="主导航">
+        <div class="container">
+            <a class="brand" href="#home" style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--ivory);text-decoration:none">婺畔</a>
+            <div class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#about">关于</a>
+                <a href="#skills">技能</a>
+                <a href="#portfolio">作品</a>
+                <a href="#contact">联系</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+    <header id="home" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-left">
+                    <h1 class="title"> <span class="typing" id="typed"></span></h1>
+                    <div class="subtitle" id="subtitle">Creating <span id="field">visual stories</span> with <span id="philosophy">intimate narratives</span></div>
+                </div>
+                <div class="hero-right">
+                    <div class="portrait" aria-hidden="true">
+                        <!-- 极简线条肖像 SVG 占位 -->
+                        <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="portrait placeholder">
+                            <rect width="100%" height="100%" fill="transparent"/>
+                            <g stroke="rgba(248,245,240,0.9)" stroke-width="2" fill="none">
+                                <path d="M80 220c0-50 40-100 80-100s80 50 80 100" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="140" cy="90" r="46"/>
+                                <path d="M100 290c20-8 40-12 60-12s40 4 60 12" stroke-linecap="round"/>
+                                <path d="M95 235c10-6 20-10 45-12 25 2 35 6 50 12" stroke-linecap="round"/>
+                            </g>
+                        </svg>
+                    </div>
+                                        <div class="socials" role="navigation" aria-label="social links">
+                                                <!-- 小红书 图标占位 -->
+                                                <a class="icon" href="#" title="小红书">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect x="2" y="2" width="20" height="20" rx="4" fill="#E64646" />
+                                                        <text x="50%" y="58%" font-size="10" text-anchor="middle" fill="#fff" font-family="sans-serif">小</text>
+                                                    </svg>
+                                                </a>
+                                                <!-- 微信 图标占位 -->
+                                                <a class="icon" href="#" title="微信">
+                                                    <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <g fill="#20C05B">
+                                                            <path d="M6 15c-1 0-2 .8-2 1.8V19h8c.6 0 1-.4 1-1v-.2c0-1-1-1.8-2-1.8H6z"/>
+                                                            <path d="M17 7c-2.2 0-4 1.8-4 4 0 1.1.5 2.1 1.4 2.7L16 15l2-1c.8-.4 1.6-1.2 1.6-2.7 0-2.2-1.8-4-4-4z"/>
+                                                        </g>
+                                                    </svg>
+                                                </a>
+                                                <a class="icon" href="#" title="GitHub"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.6-4-1.6-.5-1.2-1.3-1.5-1.3-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.6.7 1.9 1 .1-.8.4-1.4.8-1.7-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.4 0 0 1-.3 3.4 1.2a11 11 0 0 1 6.2 0C19 6 20 6.3 20 6.3c.6 1.8.2 3.1.1 3.4.8.8 1.2 2 1.2 3.2 0 4.6-2.7 5.6-5.3 5.9.4.3.7 1 .7 2v3c0 .3.2.6.8.5A12 12 0 0 0 12 .5z"/></svg></a>
+                                        </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="container about" id="about">
+            <div class="about-left"></div>
+                        <div class="about-right">
+                                <p style="color:var(--muted);margin-bottom:8px">来自浙江金华，就读于浙江大学艺术与科技专业。</p>
+                                <div class="tags" aria-label="tags">
+                                        <div class="tag">#混合媒介</div>
+                                        <div class="tag">#可持续创作</div>
+                                        <div class="tag">#跨维度叙事</div>
+                                </div>
+                        </div>
+        </section>
+
+                <!-- 软件技能 区块 -->
+                        <section class="container" id="skills">
+                            <h2 style="font-family:'Cormorant Garamond',serif;margin-bottom:12px">软件技能</h2>
+                                <div class="skills-grid" style="display:flex;flex-direction:row;gap:12px;flex-wrap:wrap;max-width:900px">
+                                    <button class="skill-btn" data-skill="All">全部</button>
+                                    <button class="skill-btn" data-skill="AI">AI</button>
+                                    <button class="skill-btn" data-skill="Figma">Figma</button>
+                                    <button class="skill-btn" data-skill="Rhino">Rhino</button>
+                                </div>
+                                <p id="skill-note" style="color:var(--muted);margin-top:12px">点击任一软件以在下方查看对应作品（不会改变“项目经历”区）。</p>
+                                <!-- 预先填充的技能画廊：按文件夹将作品列出 -->
+                                <div id="skills-gallery" class="portfolio-grid" style="margin-top:18px">
+                                    <!-- AI 文件 -->
+                                    <div class="card" data-title="海报" data-year="" data-media="PDF" data-desc="AI 海报" data-skill="AI">
+                                        <a href="个人作品/ai/海报.pdf" target="_blank">
+                                            <div class="img" style="background-image:url('bg.jpg')"></div>
+                                        </a>
+                                        <div class="overlay"><div class="meta">海报 · AI</div></div>
+                                    </div>
+                                    <!-- Figma 文件 -->
+                                    <div class="card" data-title="排版" data-year="" data-media="PDF" data-desc="Figma 排版" data-skill="Figma">
+                                        <a href="个人作品/figma/排版.pdf" target="_blank">
+                                            <div class="img" style="background-image:url('bg.jpg')"></div>
+                                        </a>
+                                        <div class="overlay"><div class="meta">排版 · Figma</div></div>
+                                    </div>
+                                    <!-- Rhino 文件 -->
+                                    <div class="card" data-title="01" data-year="" data-media="PDF" data-desc="Rhino 01" data-skill="Rhino"><a href="个人作品/rino/01.pdf" target="_blank"><div class="img" style="background-image:url('bg.jpg')"></div></a><div class="overlay"><div class="meta">01 · Rhino</div></div></div>
+                                    <div class="card" data-title="S2" data-year="" data-media="PDF" data-desc="Rhino S2" data-skill="Rhino"><a href="个人作品/rino/S2.pdf" target="_blank"><div class="img" style="background-image:url('bg.jpg')"></div></a><div class="overlay"><div class="meta">S2 · Rhino</div></div></div>
+                                    <div class="card" data-title="栅栏练习" data-year="" data-media="PDF" data-desc="Rhino 栅栏练习" data-skill="Rhino"><a href="个人作品/rino/栅栏练习.pdf" target="_blank"><div class="img" style="background-image:url('bg.jpg')"></div></a><div class="overlay"><div class="meta">栅栏练习 · Rhino</div></div></div>
+                                    <div class="card" data-title="模块练习" data-year="" data-media="PDF" data-desc="Rhino 模块练习" data-skill="Rhino"><a href="个人作品/rino/模块练习.pdf" target="_blank"><div class="img" style="background-image:url('bg.jpg')"></div></a><div class="overlay"><div class="meta">模块练习 · Rhino</div></div></div>
+                                </div>
+                        </section>
+
+        <section class="container" id="portfolio">
+            <h2 style="font-family:'Cormorant Garamond',serif;margin-bottom:16px">项目经历</h2>
+        <div class="portfolio-grid" id="grid">
+                <!-- 将个人作品根目录中的内容放入项目经历 -->
+            <div class="card" data-title="分镜" data-year="" data-media="PNG" data-desc="分镜图">
+                <div class="img" style="background-image:url('个人作品/分镜.PNG')"></div>
+                <div class="overlay"><div class="meta">分镜</div></div>
+            </div>
+            <div class="card" data-title="建模扫描练习" data-year="" data-media="PDF" data-desc="建模扫描练习">
+                <a href="个人作品/建模扫描练习.pdf" target="_blank"><div class="img" style="background-image:url('bg.jpg')"></div></a>
+                <div class="overlay"><div class="meta">建模扫描练习</div></div>
+            </div>
+            <div class="card" data-title="摄影1" data-year="" data-media="JPG" data-desc="摄影集1">
+                <div class="img" style="background-image:url('个人作品/摄影1.jpg')"></div>
+                <div class="overlay"><div class="meta">摄影1</div></div>
+            </div>
+            <div class="card" data-title="摄影2" data-year="" data-media="JPG" data-desc="摄影集2">
+                <div class="img" style="background-image:url('个人作品/摄影2.jpg')"></div>
+                <div class="overlay"><div class="meta">摄影2</div></div>
+            </div>
+            <div class="card" data-title="摄影3" data-year="" data-media="JPG" data-desc="摄影集3">
+                <div class="img" style="background-image:url('个人作品/摄影3.jpg')"></div>
+                <div class="overlay"><div class="meta">摄影3</div></div>
+            </div>
+            <div class="card" data-title="摄影4" data-year="" data-media="JPG" data-desc="摄影集4">
+                <div class="img" style="background-image:url('个人作品/摄影4.jpg')"></div>
+                <div class="overlay"><div class="meta">摄影4</div></div>
+            </div>
+            <div class="card" data-title="设计构成" data-year="" data-media="JPG" data-desc="设计构成">
+                <div class="img" style="background-image:url('个人作品/设计构成.jpg')"></div>
+                <div class="overlay"><div class="meta">设计构成</div></div>
+            </div>
+        </div>
+        </section>
+
+        <!-- modal -->
+        <div class="modal" id="modal" aria-hidden="true">
+            <div class="modal-inner">
+                <div class="modal-left" id="modal-left">
+                    <span class="close-btn" id="closeBtn">✕</span>
+                    <img id="modal-img" src="" alt="作品放大图" style="display:block;max-height:80vh;object-fit:contain">
+                    <iframe id="modal-embed" src="" style="display:none;width:100%;height:80vh;border:none;background:#000"></iframe>
+                </div>
+                <aside class="modal-right" id="modal-right">
+                    <h3 id="m-title" style="color:var(--ivory);font-family:'Cormorant Garamond',serif"></h3>
+                    <p id="m-year"></p>
+                    <p id="m-media"></p>
+                    <div style="height:1px;background:rgba(255,255,255,0.03);margin:12px 0"></div>
+                    <div id="m-desc" style="font-size:14px;color:var(--muted)"></div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="card">
+                    <h2 style="font-family:'Cormorant Garamond',serif;margin:0 0 8px 0">致访客的一封信</h2>
+                    <p style="color:var(--muted);max-width:760px;margin:0 auto">每个作品都在等待它的知音。如果你愿意聊聊合作、展览，或只是想说声‘你好’，我都非常期待。</p>
+                    <div style="margin-top:16px;">
+                        <span class="envelope" id="envIcon">✉️</span>
+                        <a class="email" href="mailto:contact@yourdomain.com">contact@yourdomain.com</a>
+                    </div>
+                    <div>
+                        <button class="btn" id="bookBtn">预约咨询</button>
+                    </div>
+                    <form class="form" id="contactForm">
+                        <input type="text" id="name" placeholder="姓名" required />
+                        <input type="email" id="email" placeholder="邮箱" required />
+                        <textarea id="message" rows="4" placeholder="需求简述"></textarea>
+                        <button type="submit" class="btn">发送</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <script>
+        /* --- 简易一次性打字效果（只播放一次），使用 Array.from 支持中文字符逐字出现 --- */
+        (function(){
+            const el = document.getElementById('typed');
+            const name = "婺畔"; // 已替换为指定名字
+            // 这里可以继续你的打字效果代码
+            // ...
+        })();
+
+        /* small accessibility: keyboard close modal */
+        document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); } });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

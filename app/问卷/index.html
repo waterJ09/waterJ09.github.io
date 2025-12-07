@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机吃什么APP调研问卷</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>随机吃什么APP主题调研问卷</h1>
+            <p class="intro">
+                感谢您参与本次调研！本问卷旨在了解用户对于"随机吃什么"决策类APP的需求和期望。
+                问卷共有12个问题，大约需要5-8分钟完成。您的回答将为我们提供宝贵的参考信息。
+            </p>
+        </header>
+        
+        <div class="progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text">完成进度: <span id="progressText">0%</span></div>
+        </div>
+        
+        <form id="surveyForm">
+            <div class="question-group">
+                <h2 style="color: #4a6cf7; margin-bottom: 20px; font-size: 20px;">基本信息</h2>
+                
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">1</span>
+                        <span>您平时在选择吃什么时，是否会感到纠结或难以决定？<span class="required">*</span></span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q1a1" name="q1" value="总是" required>
+                            <label for="q1a1">总是，经常不知道吃什么</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q1a2" name="q1" value="经常">
+                            <label for="q1a2">经常，每周都会遇到几次</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q1a3" name="q1" value="偶尔">
+                            <label for="q1a3">偶尔，每月会遇到几次</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q1a4" name="q1" value="很少">
+                            <label for="q1a4">很少，基本知道自己想吃什么</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">2</span>
+                        <span>您目前使用哪些方法来解决"吃什么"的决策问题？<span class="required">*</span></span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" id="q2a1" name="q2" value="朋友推荐">
+                            <label for="q2a1">询问朋友或家人</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q2a2" name="q2" value="外卖平台浏览">
+                            <label for="q2a2">在外卖平台上浏览选择</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q2a3" name="q2" value="固定几家">
+                            <label for="q2a3">固定去几家熟悉的餐厅</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q2a4" name="q2" value="随机选择">
+                            <label for="q2a4">随机选择或凭感觉</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q2a5" name="q2" value="其他方法">
+                            <label for="q2a5">其他方法</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question-group">
+                <h2 style="color: #4a6cf7; margin-bottom: 20px; font-size: 20px;">功能需求</h2>
+                
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">3</span>
+                        <span>您希望"随机吃什么"APP提供以下哪些随机方式？<span class="required">*</span></span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" id="q3a1" name="q3" value="完全随机">
+                            <label for="q3a1">完全随机，没有任何限制</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q3a2" name="q3" value="基于偏好">
+                            <label for="q3a2">基于我的口味偏好随机</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q3a3" name="q3" value="基于预算">
+                            <label for="q3a3">基于我的预算范围随机</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q3a4" name="q3" value="基于距离">
+                            <label for="q3a4">基于距离远近随机</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q3a5" name="q3" value="基于评分">
+                            <label for="q3a5">基于餐厅评分随机</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">4</span>
+                        <span>您希望APP在随机推荐后提供哪些额外信息？<span class="required">*</span></span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" id="q4a1" name="q4" value="餐厅详情">
+                            <label for="q4a1">餐厅详细信息和评分</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q4a2" name="q4" value="推荐理由">
+                            <label for="q4a2">推荐理由和特色菜</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q4a3" name="q4" value="导航">
+                            <label for="q4a3">导航和路线规划</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q4a4" name="q4" value="优惠信息">
+                            <label for="q4a4">优惠信息和活动</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q4a5" name="q4" value="用户评价">
+                            <label for="q4a5">其他用户的评价</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">5</span>
+                        <span>您希望"随机吃什么"APP包含哪些筛选条件？<span class="required">*</span></span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" id="q5a1" name="q5" value="菜系">
+                            <label for="q5a1">菜系类型（中餐、西餐、日料等）</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q5a2" name="q5" value="价格">
+                            <label for="q5a2">价格范围</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q5a3" name="q5" value="距离">
+                            <label for="q5a3">距离范围</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q5a4" name="q5" value="用餐时间">
+                            <label for="q5a4">用餐时间（早餐、午餐、晚餐）</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="q5a5" name="q5" value="就餐方式">
+                            <label for="q5a5">就餐方式（堂食、外卖、自取）</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">6</span>
+                        <span>您认为"随机吃什么"APP应该包含社交功能吗？<span class="required">*</span></span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q6a1" name="q6" value="非常需要" required>
+                            <label for="q6a1">非常需要，希望和朋友一起决定</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q6a2" name="q6" value="需要">
+                            <label for="q6a2">需要，可以分享自己的选择</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q6a3" name="q6" value="可有可无">
+                            <label for="q6a3">可有可无</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q6a4" name="q6" value="不需要">
+                            <label for="q6a4">不需要，个人使用即可</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question-group">
+                <h2 style="color: #4a6cf7; margin-bottom: 20px; font-size: 20px;">使用偏好</h2>
+                
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">7</span>
+                        <span>您能接受"随机吃什么"APP中广告的出现频率？<span class="required">*</span></span>
+                    </div>
+                    <div class="rating">
+                        <div class="rating-option">
+                            <input type="radio" id="q7a1" name="q7" value="不能接受" required>
+                            <label class="rating-label" for="q7a1">不能接受广告</label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="q7a2" name="q7" value="很少">
+                            <label class="rating-label" for="q7a2">很少出现</label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="q7a3" name="q7" value="适中">
+                            <label class="rating-label" for="q7a3">适中，不影响使用</label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="q7a4" name="q7" value="可以接受">
+                            <label class="rating-label" for="q7a4">可以接受较多广告</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">8</span>
+                        <span>您愿意为"随机吃什么"APP付费吗？<span class="required">*</span></span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q8a1" name="q8" value="愿意付费" required>
+                            <label for="q8a1">愿意付费购买无广告版或高级功能</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q8a2" name="q8" value="看情况">
+                            <label for="q8a2">看情况，如果功能足够好可以考虑</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q8a3" name="q8" value="不愿付费">
+                            <label for="q8a3">不愿付费，希望完全免费</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">9</span>
+                        <span>您认为"随机吃什么"APP的界面设计应该偏向哪种风格？<span class="required">*</span></span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q9a1" name="q9" value="简洁" required>
+                            <label for="q9a1">简洁明了，功能直接</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q9a2" name="q9" value="趣味">
+                            <label for="q9a2">趣味性强，有互动动画</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q9a3" name="q9" value="专业">
+                            <label for="q9a3">专业感强，类似美食指南</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q9a4" name="q9" value="个性化">
+                            <label for="q9a4">高度个性化，根据我的喜好变化</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">10</span>
+                        <span>您希望"随机吃什么"APP提供历史记录功能吗？<span class="required">*</span></span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q10a1" name="q10" value="非常需要" required>
+                            <label for="q10a1">非常需要，可以回顾过去的决策</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q10a2" name="q10" value="需要">
+                            <label for="q10a2">需要，避免重复选择</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q10a3" name="q10" value="可有可无">
+                            <label for="q10a3">可有可无</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q10a4" name="q10" value="不需要">
+                            <label for="q10a4">不需要，每次都是新的选择</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">11</span>
+                        <span>您对"随机吃什么"这类APP的整体兴趣程度如何？<span class="required">*</span></span>
+                    </div>
+                    <div class="scale">
+                        <div class="scale-point">
+                            <input type="radio" id="q11a1" name="q11" value="1" required>
+                            <label for="q11a1">1</label>
+                            <div>没兴趣</div>
+                        </div>
+                        <div class="scale-point">
+                            <input type="radio" id="q11a2" name="q11" value="2">
+                            <label for="q11a2">2</label>
+                            <div></div>
+                        </div>
+                        <div class="scale-point">
+                            <input type="radio" id="q11a3" name="q11" value="3">
+                            <label for="q11a3">3</label>
+                            <div>一般</div>
+                        </div>
+                        <div class="scale-point">
+                            <input type="radio" id="q11a4" name="q11" value="4">
+                            <label for="q11a4">4</label>
+                            <div></div>
+                        </div>
+                        <div class="scale-point">
+                            <input type="radio" id="q11a5" name="q11" value="5">
+                            <label for="q11a5">5</label>
+                            <div>很有兴趣</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-title">
+                        <span class="question-number">12</span>
+                        <span>您对"随机吃什么"APP还有哪些其他建议或期待？</span>
+                    </div>
+                    <textarea id="q12" name="q12" placeholder="请分享您的想法..."></textarea>
+                </div>
+            </div>
+            
+            <div class="button-group">
+                <button type="submit">提交问卷</button>
+            </div>
+        </form>
+        
+        <footer>
+            <p>感谢您抽出宝贵时间参与本次调研！您的意见对我们非常重要。</p>
+            <p style="margin-top: 5px;">本问卷收集的信息仅用于产品调研分析，我们将严格保密您的个人信息。</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
